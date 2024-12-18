@@ -18,13 +18,13 @@ div#header-container {
   top: 0;
 
   .close-btn .menu-bars {
-    background-image: url('/assets/images/menu-bars.svg');
+    background-image: url('./assets/images/menu-bars.svg');
     transform: rotate(0deg);
     opacity: 1;
     height: 17px;
   }
   .close-btn.active .menu-bars {
-    background-image: url('/assets/images/close-btn-menu.svg');
+    background-image: url('./assets/images/close-btn-menu.svg');
     height: 17px;
     transform: rotate(180deg);
     opacity: 1;

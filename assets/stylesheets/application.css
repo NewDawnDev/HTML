@@ -63,37 +63,37 @@ button.btn:hover:not(.close-btn, .close-modal):after {
 
 @font-face {
   font-family: "Trajan Pro 3";
-  src: url("/assets/fonts/TrajanPro3SemiBold.woff") format("woff");
+  src: url("./assets/fonts/TrajanPro3SemiBold.woff") format("woff");
   font-weight: 600;
   font-style: normal;
 }
 @font-face {
   font-family: "Trajan Pro 3";
-  src: url("/assets/fonts/TrajanPro3Bold.woff") format("woff");
+  src: url("./assets/fonts/TrajanPro3Bold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
 }
 @font-face {
   font-family: "Trajan Pro 3";
-  src: url("/assets/fonts/TrajanPro3ExtraLight.woff") format("woff");
+  src: url("./assets/fonts/TrajanPro3ExtraLight.woff") format("woff");
   font-weight: 200;
   font-style: normal;
 }
 @font-face {
   font-family: "Trajan Pro 3";
-  src: url("/assets/fonts/TrajanPro3Light.woff") format("woff");
+  src: url("./assets/fonts/TrajanPro3Light.woff") format("woff");
   font-weight: 300;
   font-style: normal;
 }
 @font-face {
   font-family: "Trajan Pro 3";
-  src: url("/assets/fonts/TrajanPro3Regular.woff") format("woff");
+  src: url("./assets/fonts/TrajanPro3Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "Trajan Pro 3";
-  src: url("/assets/fonts/TrajanPro3Black.woff") format("woff");
+  src: url("./assets/fonts/TrajanPro3Black.woff") format("woff");
   font-weight: 900;
   font-style: normal;
 }
@@ -191,13 +191,13 @@ div#header-container {
   top: 0;
 }
 div#header-container .close-btn .menu-bars {
-  background-image: url("/assets/images/menu-bars.svg");
+  background-image: url("./assets/images/menu-bars.svg");
   transform: rotate(0deg);
   opacity: 1;
   height: 17px;
 }
 div#header-container .close-btn.active .menu-bars {
-  background-image: url("/assets/images/close-btn-menu.svg");
+  background-image: url("./assets/images/close-btn-menu.svg");
   height: 17px;
   transform: rotate(180deg);
   opacity: 1;
@@ -360,19 +360,19 @@ footer {
   filter: grayscale(1);
 }
 .panel-container .item:nth-child(1) {
-  background-image: url("/assets/images/pearson-high-1.jpg");
+  background-image: url("./assets/images/pearson-high-1.jpg");
   background-position: 50% 35%;
 }
 .panel-container .item:nth-child(2) {
-  background-image: url("/assets/images/pearson-high-2.jpg");
+  background-image: url("./assets/images/pearson-high-2.jpg");
   background-position: 50% 35%;
 }
 .panel-container .item:nth-child(3) {
-  background-image: url("/assets/images/pearson-high-3.jpg");
+  background-image: url("./assets/images/pearson-high-3.jpg");
   background-position: 66% 35%;
 }
 .panel-container .item:nth-child(4) {
-  background-image: url("/assets/images/pearson-high-4.jpg");
+  background-image: url("./assets/images/pearson-high-4.jpg");
   background-position: 50% 35%;
 }
 .panel-container .text-wrapper {
