@@ -1,0 +1,157 @@
+// global-variables.scss
+
+// Primary Colors
+$primary: #007740 !important;
+$secondary: #00652F !important;
+$warning: #E7C941 !important;
+$danger: #CC0608 !important;
+$grey: #F1F1F1 !important;
+$white: #ffffff !important;
+
+// Light and Dark Colors
+$light: #f8f9fa !important;
+$dark: #1A1A18 !important;
+
+.bg-dark{background-color: $dark; color: $light;}
+.bg-light{background-color: $light; color: $dark;}
+
+// BUTTONS
+button.btn {
+    font-size: 16px;
+    padding: 7px 18px;
+    border-radius: 10px;
+    border: none;
+    width: fit-content;
+    position: relative;
+    * {
+        z-index: 99;
+        position: relative;
+    }
+    &:before {
+        content: '';
+        width: 0%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        border-radius: 10px;
+        background-color: $dark;
+        transition: width 0.3s ease-in-out;
+    }
+    &:after {
+        content: '';
+        width: 0%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        border-radius: 10px;
+        background-color: $primary;
+        transition: width 0.3s ease-in-out;
+    }
+}
+button.btn:hover:not(.close-btn, .close-modal) {
+    color: white !important;
+    &:before {
+        width: 100%;
+        transition: width 0.3s ease-in-out;
+    }
+    &:after {
+        width: 100%;
+        transition: 0.6s width 0.1s ease-in-out;
+    }
+}
+
+// Custom Google Font
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    font-family: 'Roboto' !important;
+    // font-weight: 300;
+    transition: all 0.3s ease-in-out !important;
+}
+
+// Custom Trojan Pro 3 Font
+@font-face {
+    font-family: 'Trajan Pro 3';
+    src: url('/assets/fonts/TrajanPro3SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Trajan Pro 3';
+    src: url('/assets/fonts/TrajanPro3Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Trajan Pro 3';
+    src: url('/assets/fonts/TrajanPro3ExtraLight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Trajan Pro 3';
+    src: url('/assets/fonts/TrajanPro3Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Trajan Pro 3';
+    src: url('/assets/fonts/TrajanPro3Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Trajan Pro 3';
+    src: url('/assets/fonts/TrajanPro3Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+}
+
+.font-trojan {
+    font-family: 'Trajan Pro 3' !important;
+}
+
+// Custom Line Height
+.lh-0 { line-height: 0px; }
+.lh-10 { line-height: 10px; }
+.lh-20 { line-height: 20px; }
+.lh-30 { line-height: 30px; }
+.lh-40 { line-height: 40px; }
+.lh-50 { line-height: 50px; }
+.lh-60 { line-height: 60px; }
+.lh-70 { line-height: 70px; }
+.lh-80 { line-height: 80px; }
+.lh-90 { line-height: 90px; }
+.lh-100 { line-height: 100px; }
+
+//  Custom Styling
+html {
+  body {overflow-x: hidden;}
+  p {font-size: 16px;}
+  /* width */
+  ::-webkit-scrollbar {
+      width: 4px !important;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+      background: #f1f1f1;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+      background: #888;
+  }
+
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+      background: #555;
+  }
+}

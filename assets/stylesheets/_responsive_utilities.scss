@@ -1,0 +1,27 @@
+// responsive_utilities.scss
+
+// Custom Breakpoints
+$custom-breakpoints: (
+  xs: 0,          // Extra small
+  sm: 480px,      // Custom small
+  md: 768px,      // Medium
+  lg: 992px,      // Large
+  xl: 1200px,     // Extra large
+  xxl: 1400px,    // Extra extra large
+  xxxl: 1600px    // Custom extra large
+);
+
+// Merge with Bootstrap's defaults
+$grid-breakpoints: map-merge($grid-breakpoints, $custom-breakpoints);
+
+// Import Bootstrap
+@import "bootstrap/scss/bootstrap";
+
+// Custom Utility Classes
+@each $breakpoint, $value in $grid-breakpoints {
+  @media (min-width: #{$value}) {
+    .custom-padding-#{$breakpoint} {
+      padding: 2rem;
+    }
+  }
+}
