@@ -1,4 +1,21 @@
 section.fwt-pod {
   height: 640px;
-  h2 {font-size: 42px;}
+  h2 {
+    font-size: 42px;
+    position: relative;
+    display: inline-flex;
+    gap: 4px;
+    &:before {
+      content: 'Since';
+      font-size: 14px;
+      margin: auto;
+      height: fit-content;
+    }
+    &:after {
+      content: 'Sedert';
+      font-size: 14px;
+      margin: auto;
+      height: fit-content;
+    }
+  }
 }

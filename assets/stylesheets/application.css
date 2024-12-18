@@ -529,4 +529,19 @@ section.fwt-pod {
 }
 section.fwt-pod h2 {
   font-size: 42px;
+  position: relative;
+  display: inline-flex;
+  gap: 4px;
+}
+section.fwt-pod h2:before {
+  content: "Since";
+  font-size: 14px;
+  margin: auto;
+  height: fit-content;
+}
+section.fwt-pod h2:after {
+  content: "Sedert";
+  font-size: 14px;
+  margin: auto;
+  height: fit-content;
 }/*# sourceMappingURL=application.css.map */
