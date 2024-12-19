@@ -526,6 +526,7 @@ footer {
 
 section.fwt-pod {
   height: 640px;
+  position: relative;
 }
 section.fwt-pod h2 {
   font-size: 42px;
@@ -544,4 +545,21 @@ section.fwt-pod h2:after {
   font-size: 14px;
   margin: auto;
   height: fit-content;
+}
+section.fwt-pod::after {
+  content: "";
+  display: block;
+  background-image: url(/assets/images/light-badge.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 323px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  z-index: -1;
+  opacity: 0.08;
 }/*# sourceMappingURL=application.css.map */
