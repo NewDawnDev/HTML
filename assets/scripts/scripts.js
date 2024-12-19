@@ -1,4 +1,4 @@
-  fetch('./components/header.html')
+  fetch('/components/header.html')
   .then(response => response.text())
   .then(data => {
   document.getElementById('header-container').innerHTML = data;
@@ -6,7 +6,7 @@
   .catch(error => console.error('Error loading header:', error));
 
   // Function to load body.html into index.html
-  fetch('./components/pods.html')
+  fetch('/components/pods.html')
   .then(response => response.text())
   .then(data => {
   document.getElementById('pods-container').innerHTML = data;
@@ -14,7 +14,7 @@
   .catch(error => console.error('Error loading body:', error));
 
   // Function to load footer.html into index.html
-  fetch('./components/footer.html')
+  fetch('/components/footer.html')
   .then(response => response.text())
   .then(data => {
   document.getElementById('footer-container').innerHTML = data;
@@ -22,7 +22,7 @@
   .catch(error => console.error('Error loading footer:', error));
 
   // Function to load modal.html into index.html
-  fetch('./components/modal.html')
+  fetch('/components/modal.html')
   .then(response => response.text())
   .then(data => {
   document.getElementById('modal-container').innerHTML = data;
@@ -31,14 +31,14 @@
 
   document.addEventListener('DOMContentLoaded', function() {
   // Function to load banner-panels.html into index.html
-  fetch('./components/banner-panels.html')
+  fetch('/components/banner-panels.html')
   .then(response => response.text())
   .then(data => {
   document.getElementById('banner-panels').innerHTML = data;
   })
   .catch(error => console.error('Error loading footer:', error));
 
-  fetch('./components/menu-copyright.html')
+  fetch('/components/menu-copyright.html')
   .then(response => response.text())
   .then(data => {
   document.getElementById('menu-copyright').innerHTML = data;
