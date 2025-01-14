@@ -7,6 +7,8 @@ Classes and their Functions
 
 .auto-height (Allows a pod to have a height that fits the content)
 
+.auto-fit (Makes images position center and size to cover)
+
 .lh-0 { line-height: 0px; }
 .lh-10 { line-height: 10px; }
 .lh-20 { line-height: 20px; }
@@ -19,6 +21,4 @@ Classes and their Functions
 .lh-90 { line-height: 90px; }
 .lh-100 { line-height: 100px; }
 
-
-.font-trojan (Forces Font to be Custom Trojan font)
-
+.place-2 (orders items above another)

@@ -8,13 +8,18 @@ div#header-container.scrolled {
 }
 div#header-container.scrolling-up {
   background-color: $dark;
-  .header {padding: 0px !important}
+  // .header {padding: 0px !important}
   img.mainLogo {
     width: 80% !important;
   }
 }
 #header-container:not(.scrolled):not(.scrolling-up) {
   background-color: transparent;
+}
+@media screen and (max-width: 992px){
+  div#header-container.scrolled .header {
+    padding: .5rem!important;
+  }
 }
 
 div#header-container {
@@ -113,6 +118,7 @@ div#header-container {
     @media screen and (max-width: 992px){
       img.mainLogo {
         width: 0px;
+        max-width: 0px;
         min-width: 0px;
         opacity: 0;
       }
