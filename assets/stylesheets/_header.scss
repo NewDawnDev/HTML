@@ -1,9 +1,17 @@
 // header.scss
 div#header-container.scrolled {
   top: -99px;
+  .header {padding: 0px !important}
+  img.mainLogo {
+    width: 80% !important;
+  }
 }
 div#header-container.scrolling-up {
   background-color: $dark;
+  .header {padding: 0px !important}
+  img.mainLogo {
+    width: 80% !important;
+  }
 }
 #header-container:not(.scrolled):not(.scrolling-up) {
   background-color: transparent;
@@ -11,7 +19,7 @@ div#header-container.scrolling-up {
 
 div#header-container {
   z-index: 99;
-  height: 99px;
+  // height: 99px;
   position: fixed;
   width: 100%;
   left: 0;

@@ -1,4 +1,4 @@
-section.fwt-pod {
+section.tif-pod {
   height: 640px;
   position: relative;
   h2 {
@@ -6,18 +6,6 @@ section.fwt-pod {
     position: relative;
     display: inline-flex;
     gap: 4px;
-    &:before {
-      content: 'Since';
-      font-size: 14px;
-      margin: auto;
-      height: fit-content;
-    }
-    &:after {
-      content: 'Sedert';
-      font-size: 14px;
-      margin: auto;
-      height: fit-content;
-    }
   }
   &::after {
     content: '';
